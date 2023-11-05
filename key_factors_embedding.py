@@ -172,7 +172,7 @@ for i in range(len(df_dow_jones_raw)):
     new_row.append(close_price)
     df_dow_jones_sentiment_top.loc[len(df_dow_jones_sentiment_top)] = new_row
 
-    df_dow_jones_raw_all.to_csv('data/dow_jones_raw_all1.csv', index=False)
-    df_dow_jones_sentiment_all.to_csv('data/dow_jones_sentiment_all1.csv', index=False)
-    df_dow_jones_raw_top.to_csv('data/dow_jones_raw_top1.csv', index=False)
-    df_dow_jones_sentiment_top.to_csv('data/dow_jones_sentiment_top1.csv', index=False)
+    df_dow_jones_raw_all.to_csv('data/dow_jones_raw_all.csv', index=False)
+    df_dow_jones_sentiment_all.to_csv('data/dow_jones_sentiment_all.csv', index=False)
+    df_dow_jones_raw_top.to_csv('data/dow_jones_raw_top.csv', index=False)
+    df_dow_jones_sentiment_top.to_csv('data/dow_jones_sentiment_top.csv', index=False)
