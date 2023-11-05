@@ -41,9 +41,10 @@ class RNN(nn.Module):
 
         # Passing in the input and hidden state into the model and obtaining outputs
         out, hidden = self.rnn(x, hidden)
+        embeddings = out
         out = self.fc(out).squeeze(-1)
         
-        return out, hidden
+        return out, embeddings
 
     def init_hidden(self, batch_size):
         # This method generates the first hidden state of zeros
